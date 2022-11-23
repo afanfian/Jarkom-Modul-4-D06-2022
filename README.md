@@ -14,6 +14,9 @@ Dibawah ini merupakan subneting VLSM:
 ![Modul4_Subnet-NID drawio](https://user-images.githubusercontent.com/82325182/203382599-b3edc2b0-c594-434a-81d8-e12b87d77e8d.png)
 Selain itu, dibawah ini merupakan detail kode/Jumlah Alamat IP dari lingkaran diatas yang telah kami buat, serta Length, Length Total, Network ID, Host Min, Host Max, dan Broadcast ID:  
 ![image](https://user-images.githubusercontent.com/82325182/203383202-092f8fe0-4059-496f-b13c-7bceabf4a583.png)   
+Dibawah ini merupakan pengelompokan Kode, Keterangan, IP Address, Subnet Mask, dan Length:  
+![image](https://user-images.githubusercontent.com/82325182/203498223-3550a15e-7637-4561-8d4b-cb037bd6364f.png)
+![image](https://user-images.githubusercontent.com/82325182/203498261-ffe4d8f0-cf23-4ee2-8c9d-d7d09bb45c8e.png)  
 Dibawah ini merupakan konfigurasi pada setiap PC:  
 ### PC Guideau
 ![image](https://user-images.githubusercontent.com/82325182/203384335-b51fd07b-4a32-4612-b2fe-0ac2e31e102e.png)
