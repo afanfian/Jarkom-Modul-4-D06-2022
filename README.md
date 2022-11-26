@@ -473,3 +473,7 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 8.  Pengetesan dengan cara melakukan ping dari Server ke Server (The Witch ke The Beast)
 ![Ping The Witch to The Beast](https://user-images.githubusercontent.com/70679432/204068870-2b99a146-0b4f-43d4-ae46-35842f918a7f.jpg)
 
+## Kendala
+
+1. Kesulitan dalam melakukan konfigurasi routing pada router
+2. Kesulitan dalam menentukan subnet yang terjauh dari NAT
