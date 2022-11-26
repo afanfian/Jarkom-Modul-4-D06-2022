@@ -54,7 +54,8 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 2. Melakukan pembagian IP berdasarkan penggabungan subnet yang telah dibuat dengan membuat tree  
     ![IP_Tree_CIDR](https://user-images.githubusercontent.com/70679432/204067484-1ddcd70b-49a1-4901-8b11-424cae5bc94e.png)
 
-3. Didapatkan hasil sebagai berikut 
+3. Didapatkan hasil sebagai berikut  
+
     ![Hasil Akhir IP dan Netmask tiap Subnet CIDR](https://user-images.githubusercontent.com/70679432/204067523-5b55f7a6-113e-44e5-969d-bb1ff93a6b0f.jpg)
 
 4. Melakukan konfigurasi Router di GNS 3 sebagai berikut  
@@ -388,4 +389,87 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
             netmask 255.255.255.252
             gateway 10.18.148.1
         ```
+6. Lakukan uncomment ```net.ipv4.ip_forward=1 pada file /etc/sysctl.conf``` di semua router  
+
+7. Tambahkan routing pada router 
+    a. The Resonance
+
+        ```
+        # A1 - A2
+        route add -net 10.18.32.0 netmask 255.255.254.0 gw 10.18.0.2
+
+        # A16 - A14
+        route add -net 10.18.208.0 netmask 255.255.255.192 gw 10.18.224.2
+
+        # A16 - A15 - A13
+        route add -net 10.18.194.0 netmask 255.255.255.192 gw 10.18.224.2 
+
+        # A16 - A15 - A11 - A10
+        route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.224.2
+
+        # A3 - A12
+        route add -net 10.18.136.0 netmask 255.255.255.128 gw 10.18.160.2
+
+        # A3 - A4 - A7
+        route add -net 10.18.128.0 netmask 255.255.255.252 gw 10.18.160.2
+
+        # A3 - A4 - A5
+        route add -net 10.18.130.0 netmask 255.255.255.252 gw 10.18.160.2
+
+        # A3 - A6 - A8
+        route add -net 10.18.144.0 netmask 255.255.254.0 gw 10.18.160.2
+
+        # A3 - A6 - A9
+        route add -net 10.18.146.0 netmask 255.255.255.0 gw 10.18.160.2
+
+        # A3 - A6 - A18
+        route add -net 10.18.148.0 netmask 255.255.255.252 gw 10.18.160.2
+        ```
+    b. The Order
+
+        ```
+        # A15 - A13
+        route add -net 10.18.194.0 netmask 255.255.255.252 gw 10.18.200.2
+
+        # A15 - A11 - A10
+        route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.200.2
+        ```
+    c. The Minister 
+        
+        ```
+        # A11 - A10
+        route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.192.2
+        ```
+    d. The Instrument
+        
+        ```
+        # A4 - A5
+        route add -net 10.18.130.0 netmask 255.255.255.128 gw 10.18.132.2
+
+        # A4 - A7
+        route add -net 10.18.128.0 netmask 255.255.255.128 gw 10.18.132.2
+
+        # A6 - A8
+        route add -net 10.18.144.0 netmask 255.255.254.0 gw 10.18.152.2
+
+        # A6 - A9
+        route add -net 10.18.146.0 netmask 255.255.255.0 gw 10.18.152.2
+
+        # A6 - A18
+        route add -net 10.18.148.0 netmask 255.255.255.252 gw 10.18.152.2
+        ```
+    e.  The Profound
+
+        ```
+        # A4 - A3
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.18.132.1
+        ```
+    f.  The Firefist
+        
+        ```
+        # A18
+        route add -net 10.18.148.0 netmask 255.255.255.252 gw 10.18.146.3
+        ```
+8.  Pengetesan dengan cara melakukan ping dari Server ke Server (The Witch ke The Beast)
+![Ping The Witch to The Beast](https://user-images.githubusercontent.com/70679432/204068870-2b99a146-0b4f-43d4-ae46-35842f918a7f.jpg)
 
