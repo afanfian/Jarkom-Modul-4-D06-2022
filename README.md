@@ -12,7 +12,7 @@ Kami menggunakan dua tools pada praktikum ini, yaitu:
 1. CPT untuk konfigurasi Variable Length Subnet Mask (VLSM)   
 2. GNS3 untuk konfigurasi Classless Inter Domain Routing (CIDR)
 
-## Konfigurasi Variable Length Subnet Mask (VLSM)  
+## Konfigurasi Variable Length Subnet Mask (VLSM) di Cisco Packet Tracer
 Berikut adalah pengelompokkan subnet pada topologi.  
 ![Modul4_Subnet-NID drawio](https://user-images.githubusercontent.com/82325182/203382599-b3edc2b0-c594-434a-81d8-e12b87d77e8d.png)
 Berdasarkan pengelompokkan subnet tersebut, kami mendapatkan data-data berupa kode/Jumlah Alamat IP dari subnet yang telah dibuat, Length, Length Total, Network ID, Host Min, Host Max, dan Broadcast ID:  
@@ -43,3 +43,349 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 ![image](https://user-images.githubusercontent.com/82325182/203385852-fc1e5665-1293-4d0d-bab5-54a33913bc46.png)
 ### PC (Corvekt 200 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203386091-eccd9310-0195-4fcf-a8a9-b2dd2fa5fa34.png)
+
+## Konfigurasi Classless Inter Domain Routing (CIDR) di GNS3
+
+1. Membuat pembagian subnet sebagai berikut
+    ![Pengelompokkan Subnet CIDR](https://user-images.githubusercontent.com/70679432/204067436-2d576e2e-00f1-44fa-b377-ea8a171ba705.jpeg)
+
+    ![Grafik  Pengelompokkan Subnet CIDR](https://user-images.githubusercontent.com/70679432/204067458-e1e67056-b6de-4c6c-960a-84a9648bda8e.jpg)
+
+2. Melakukan pembagian IP berdasarkan penggabungan subnet yang telah dibuat dengan membuat tree  
+    ![IP_Tree_CIDR](https://user-images.githubusercontent.com/70679432/204067484-1ddcd70b-49a1-4901-8b11-424cae5bc94e.png)
+
+3. Didapatkan hasil sebagai berikut 
+    ![Hasil Akhir IP dan Netmask tiap Subnet CIDR](https://user-images.githubusercontent.com/70679432/204067523-5b55f7a6-113e-44e5-969d-bb1ff93a6b0f.jpg)
+
+4. Melakukan konfigurasi Router di GNS 3 sebagai berikut  
+    a. The Resonance
+
+        ```  
+        # NAT
+        auto eth0
+        iface eth0 inet dhcp
+
+        # A17
+        auto eth1
+        iface eth1 inet static
+                address 10.18.64.1
+                netmask 255.255.255.252
+
+        # A1
+        auto eth2
+        iface eth2 inet static
+                address 10.18.0.1
+                netmask 255.255.255.252
+
+        # A3
+        auto eth3
+        iface eth3 inet static
+                address 10.18.160.1
+                netmask 255.255.255.252
+
+        #A16
+        auto eth4
+        iface eth4 inet static
+                address 10.18.224.1
+                netmask 255.255.255.252
+        ```
+    b. The Magical 
+
+        ```
+        # A1
+        auto eth0
+        iface eth0 inet static
+                address 10.18.0.2
+                netmask 255.255.255.252
+                gateway 10.18.0.1
+
+        # A2
+        auto eth1
+        iface eth1 inet static
+                address 10.18.32.1
+                netmask 255.255.254.0
+
+        ```
+    c. The Order
+        
+        ```
+        # A16
+        auto eth0
+        iface eth0 inet static
+            address 10.18.224.2
+            netmask 255.255.255.252
+            gateway 10.18.224.1
+
+        # A14
+        auto eth1
+        iface eth1 inet static
+            address 10.18.208.1
+            netmask 255.255.255.192
+
+        # A15
+        auto eth2
+        iface eth2 inet static
+            address 10.18.200.1
+            netmask 255.255.255.252
+        ```
+    d. The Minister
+
+        ```
+        # A15
+        auto eth0
+        iface eth0 inet static
+            address 10.18.200.2
+            netmask 255.255.255.252
+            gateway 10.18.200.1
+
+        # A13
+        auto eth1
+        iface eth1 inet static
+            address 10.18.194.1
+            netmask 255.255.252.0
+
+        # A11
+        auto eth2
+        iface eth2 inet static
+            address 10.18.192.1
+            netmask 255.255.255.252
+
+        ```
+    e. The Dauntless
+
+        ```
+        # A11
+        auto eth0
+        iface eth0 inet static
+            address 10.18.192.2
+            netmask 255.255.255.252
+            gateway 10.18.192.1
+
+        # A10
+        auto eth1
+        iface eth1 inet static
+            address 10.18.196.1
+            netmask 255.255.255.0
+        ```
+    f. The Instrument
+
+        ```
+        # A3
+        auto eth0
+        iface eth0 inet static
+            address 10.18.160.2
+            netmask 255.255.255.252
+            gateway 10.18.160.1
+
+        # A12
+        auto eth1
+        iface eth1 inet static
+            address 10.18.136.1
+            netmask 255.255.255.128
+
+        # A4
+        auto eth2
+        iface eth2 inet static
+            address 10.18.132.1
+            netmask 255.255.255.252
+
+        # A6
+        auto eth3
+        iface eth3 inet static
+            address 10.18.152.1
+            netmask 255.255.255.252
+        ```
+    g. The Profound
+
+        ```
+        # A4
+        auto eth0
+        iface eth0 inet static
+            address 10.18.132.2
+            netmask 255.255.255.252
+            gateway 10.18.132.1
+
+        # A5
+        auto eth1
+        iface eth1 inet static
+            address 10.18.130.1
+            netmask 255.255.255.128
+
+        # A7
+        auto eth2
+        iface eth2 inet static
+            address 10.18.128.1
+            netmask 255.255.255.128
+
+        ```
+    h. The Firefist
+
+        ```
+        # A6
+        auto eth0
+        iface eth0 inet static
+            address 10.18.152.2
+            netmask 255.255.255.252
+            gateway 10.18.152.1
+
+        # A8
+        auto eth1
+        iface eth1 inet static
+            address 10.18.144.1
+            netmask 255.255.254.0
+
+        # A9
+        auto eth2
+        iface eth2 inet static
+            address 10.18.146.1
+            netmask 255.255.255.0
+
+        ```
+    I. The Queen
+
+        ```
+        # A9
+        auto eth0
+        iface eth0 inet static
+            address 10.18.146.3
+            netmask 255.255.255.0
+            gateway 10.18.146.1
+
+        # A18
+        auto eth1
+        iface eth1 inet static
+            address 10.18.148.1
+            netmask 255.255.255.252
+        ```
+5. Melakukan konfigurasi PC di GNS 3 sebagai berikut  
+    a. The Beast
+
+        ```
+        # A17
+        auto eth0
+        iface eth0 inet static
+            address 10.18.64.2
+            netmask 255.255.255.252
+            gateway 10.18.64.1
+        ```
+    b. Corvekt (200 Host)
+
+        ```
+        auto eth0
+        iface eth0 inet static
+                address 10.18.32.2
+                netmask 255.255.254.0
+                gateway 10.18.32.1
+
+        ```
+    c. Haines (70 Host)
+
+        ```
+        auto eth0
+        iface eth0 inet static
+                address 10.18.32.3
+                netmask 255.255.254.0
+                gateway 10.18.32.1
+
+        ```
+    d. Ashaf (50 Host)
+        
+        ```
+        # A14
+        auto eth0
+        iface eth0 inet static
+            address 10.18.208.2
+            netmask 255.255.255.192
+            gateway 10.18.208.1
+        ```
+    e. Guideau (1000 Host)
+
+        ```
+        # A13
+        auto eth0
+        iface eth0 inet static
+            address 10.18.194.2
+            netmask 255.255.252.0
+            gateway 10.18.194.1
+        ```
+    f. Johan (100 Host)
+
+        ```
+        # A10
+        auto eth0
+        iface eth0 inet static
+            address 10.18.196.2
+            netmask 255.255.255.0
+            gateway 10.18.196.1
+        ```
+    g. Phanora (150 Host)
+
+        ```
+        # A10
+        auto eth0
+        iface eth0 inet static
+            address 10.18.196.3
+            netmask 255.255.255.0
+            gateway 10.18.196.1
+        ```
+    h. Matt Cugat (120 Host)
+
+        ```
+        # A12
+        auto eth0
+        iface eth0 inet static
+            address 10.18.136.2
+            netmask 255.255.255.128
+            gateway 10.18.136.1
+        ```
+    i.  Spendrow (120 Host)
+        
+        ```
+        # A5
+        auto eth0
+        iface eth0 inet static
+            address 10.18.130.2
+            netmask 255.255.255.128
+            gateway 10.18.130.1
+        ```
+    j.  Helga (70 Host)
+
+        ```
+        # A7
+        auto eth0
+        iface eth0 inet static
+            address 10.18.128.2
+            netmask 255.255.255.128
+            gateway 10.18.128.1
+        ```
+    k. Oakleave (500 Host)
+
+        ```
+        # A7
+        auto eth0
+        iface eth0 inet static
+            address 10.18.128.2
+            netmask 255.255.255.128
+            gateway 10.18.128.1
+        ```
+    l.  Keith (210 Host)
+
+        ```
+        # A9
+        auto eth0
+        iface eth0 inet static
+            address 10.18.146.2
+            netmask 255.255.255.0
+            gateway 10.18.146.1
+        ```
+    m.  The Witch
+
+        ```
+        # A18
+        auto eth0
+        iface eth0 inet static
+            address 10.18.148.2
+            netmask 255.255.255.252
+            gateway 10.18.148.1
+        ```
+
