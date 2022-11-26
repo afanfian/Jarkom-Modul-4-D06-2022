@@ -400,8 +400,14 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
         # A16 - A14
         route add -net 10.18.208.0 netmask 255.255.255.192 gw 10.18.224.2
 
+        # A16 - A15
+        route add -net 10.18.200.0 netmask 255.255.255.252 gw 10.18.224.2
+
         # A16 - A15 - A13
         route add -net 10.18.194.0 netmask 255.255.255.192 gw 10.18.224.2 
+
+        # A16 - A15 - A11
+        route add -net 10.18.192.0 netmask 255.255.255.252 gw 10.18.224.2
 
         # A16 - A15 - A11 - A10
         route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.224.2
@@ -409,11 +415,17 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
         # A3 - A12
         route add -net 10.18.136.0 netmask 255.255.255.128 gw 10.18.160.2
 
+        # A3 - A4
+        route add -net 10.18.132.0 netmask 255.255.255.252 gw 10.18.160.2
+
         # A3 - A4 - A7
         route add -net 10.18.128.0 netmask 255.255.255.252 gw 10.18.160.2
 
         # A3 - A4 - A5
         route add -net 10.18.130.0 netmask 255.255.255.252 gw 10.18.160.2
+
+        # A3 - A6
+        route add -net 10.18.152.0 netmask 255.255.255.252 gw 10.18.160.2
 
         # A3 - A6 - A8
         route add -net 10.18.144.0 netmask 255.255.254.0 gw 10.18.160.2
@@ -430,6 +442,9 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
         # A15 - A13
         route add -net 10.18.194.0 netmask 255.255.255.252 gw 10.18.200.2
 
+        # A15 - A11
+        route add -net 10.18.192.0 netmask 255.255.255.252 gw 10.18.200.2
+
         # A15 - A11 - A10
         route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.200.2
         ```
@@ -438,6 +453,9 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
         ```
         # A11 - A10
         route add -net 10.18.196.0 netmask 255.255.255.0 gw 10.18.192.2
+
+        # A15 - A16 - A1 - A2
+        route add -net 10.18.32.0 netmask 255.255.254.0 gw 10.18.200.1
         ```
     d. The Instrument
         
@@ -461,7 +479,7 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 
         ```
         # A4 - A3
-        route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.18.132.1
+        route add -net 10.18.160.0 netmask 255.255.255.252 gw 10.18.132.1
         ```
     f.  The Firefist
         
@@ -469,8 +487,20 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
         # A18
         route add -net 10.18.148.0 netmask 255.255.255.252 gw 10.18.146.3
         ```
-8.  Pengetesan dengan cara melakukan ping dari Server ke Server (The Witch ke The Beast)
-![Ping The Witch to The Beast](https://user-images.githubusercontent.com/70679432/204068870-2b99a146-0b4f-43d4-ae46-35842f918a7f.jpg)
+    g. The Dauntless
+        ```
+        # A11 - A15
+        route add -net 10.18.200.0 netmask 255.255.255.252 gw 10.18.192.1
+        ```
+8.  Pengetesan dengan cara melakukan ping  
+    a. Dari The Witch ke The Beast  
+        ![Ping The Witch to The Beast](https://user-images.githubusercontent.com/70679432/204068870-2b99a146-0b4f-43d4-ae46-35842f918a7f.jpg)
+    b. Dari The Dauntles ke The Profound
+        ![Ping The Duntles to The Profound](https://user-images.githubusercontent.com/70679432/204096239-f410b721-75b2-4e52-a780-e9c8a20b48b4.jpg)
+    c. Dari Guideau ke The Firefist
+        ![Ping Guideau to The Firefist](https://user-images.githubusercontent.com/70679432/204096265-857aba59-3782-448e-a705-658b50d9708e.jpg)
+    d.  Dari Corvekt ke The Minister
+        ![Ping Corvekt to The Minister](https://user-images.githubusercontent.com/70679432/204096300-41b838aa-65c0-494f-866a-442fdf8a5e69.jpg)
 
 ## Kendala
 
