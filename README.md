@@ -14,12 +14,11 @@ Kami menggunakan dua tools pada praktikum ini, yaitu:
 
 ## Konfigurasi Variable Length Subnet Mask (VLSM) di Cisco Packet Tracer
 Berikut adalah pengelompokkan subnet pada topologi.  
-![Modul4_Subnet-NID drawio](https://user-images.githubusercontent.com/82325182/203382599-b3edc2b0-c594-434a-81d8-e12b87d77e8d.png)
+![Modul4_Subnet-NID drawio](https://user-images.githubusercontent.com/82325182/203382599-b3edc2b0-c594-434a-81d8-e12b87d77e8d.png)  
+Dibawah ini merupakan Tree Variable Length Subnet Mask (VLSM):  
+![Modul4_Subnet-TREE_VLSM drawio](https://user-images.githubusercontent.com/82325182/204074410-ef1f8c91-5001-4c13-ba67-4dbb0ce6eca7.png)
 Berdasarkan pengelompokkan subnet tersebut, kami mendapatkan data-data berupa kode/Jumlah Alamat IP dari subnet yang telah dibuat, Length, Length Total, Network ID, Host Min, Host Max, dan Broadcast ID:  
-![image](https://user-images.githubusercontent.com/82325182/203383202-092f8fe0-4059-496f-b13c-7bceabf4a583.png)   
-Dibawah ini merupakan pengelompokan Kode, Keterangan, IP Address, Subnet Mask, dan Length:  
-![image](https://user-images.githubusercontent.com/82325182/203498223-3550a15e-7637-4561-8d4b-cb037bd6364f.png)
-![image](https://user-images.githubusercontent.com/82325182/203498261-ffe4d8f0-cf23-4ee2-8c9d-d7d09bb45c8e.png)  
+![Pembagian Network ID, Host Min, Host Max dan Broadcast IP](https://user-images.githubusercontent.com/82325182/204074374-74e6a6de-940a-42a6-8b58-47b69108dcee.png) 
 Dibawah ini merupakan konfigurasi pada setiap PC:  
 ### PC Guideau (1000 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203384335-b51fd07b-4a32-4612-b2fe-0ac2e31e102e.png)
