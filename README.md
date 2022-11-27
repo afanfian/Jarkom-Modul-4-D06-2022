@@ -16,10 +16,11 @@ Kami menggunakan dua tools pada praktikum ini, yaitu:
 Berikut adalah pengelompokkan subnet pada topologi.  
 ![Modul4_Subnet-NID drawio](https://user-images.githubusercontent.com/82325182/203382599-b3edc2b0-c594-434a-81d8-e12b87d77e8d.png)  
 Dibawah ini merupakan Tree Variable Length Subnet Mask (VLSM):  
-![Modul4_Subnet-TREE_VLSM drawio](https://user-images.githubusercontent.com/82325182/204074410-ef1f8c91-5001-4c13-ba67-4dbb0ce6eca7.png)
-Berdasarkan pengelompokkan subnet tersebut, kami mendapatkan data-data berupa kode/Jumlah Alamat IP dari subnet yang telah dibuat, Length, Length Total, Network ID, Host Min, Host Max, dan Broadcast ID:  
-![Pembagian Network ID, Host Min, Host Max dan Broadcast IP](https://user-images.githubusercontent.com/82325182/204074374-74e6a6de-940a-42a6-8b58-47b69108dcee.png) 
-Dibawah ini merupakan konfigurasi pada setiap PC:  
+![TREE_VLSM](https://user-images.githubusercontent.com/55425460/204121898-5bf81a4b-95a1-4430-a9fe-717febb620a4.png)
+Berdasarkan pengelompokkan subnet tersebut, kami membuat tabel untuk penjelasan pembagian subnet dan network ID yang telah dibuat:
+![Pembagian Network ID](https://user-images.githubusercontent.com/55425460/204121988-f76a920b-d4f8-4820-ac10-bdfd0d74e49c.png)
+
+Di bawah ini merupakan konfigurasi pada setiap PC:  
 ### PC Guideau (1000 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203384335-b51fd07b-4a32-4612-b2fe-0ac2e31e102e.png)
 ### PC Johan (100 Host)
