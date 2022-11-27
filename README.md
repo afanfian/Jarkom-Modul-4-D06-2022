@@ -75,7 +75,7 @@ Cara menambahkan ke routing table:
    13. 10.18.11.0/25 via 10.18.11.214
    14. 10.18.10.128/25 via 10.18.11.214
 
-    ![The Resonance Routing](https://user-images.githubusercontent.com/55425460/204121645-26b88201-d5d4-4549-a4da-1dd584036b0e.png)
+   ![The Resonance Routing](https://user-images.githubusercontent.com/55425460/204121645-26b88201-d5d4-4549-a4da-1dd584036b0e.png)
 
 ### The Order
 
@@ -84,20 +84,20 @@ Cara menambahkan ke routing table:
    3. 10.18.0.0/22 via 10.18.11.198
    4. 10.18.8.0/24 via 10.18.11.198
 
-    ![The Order Routing](https://user-images.githubusercontent.com/55425460/204121650-858c9247-6b4c-469a-bde3-e2330a71726c.png)
+   ![The Order Routing](https://user-images.githubusercontent.com/55425460/204121650-858c9247-6b4c-469a-bde3-e2330a71726c.png)
 
 ### The Minister
 
    1.  0.0.0.0/0 via 10.18.11.197
    2.  10.18.8.0/24 via 10.18.11.194
    
-    ![The Minister Routing](https://user-images.githubusercontent.com/55425460/204121659-d119641b-720a-43c4-9375-9a0944790225.png)
+   ![The Minister Routing](https://user-images.githubusercontent.com/55425460/204121659-d119641b-720a-43c4-9375-9a0944790225.png)
 
 ### The Dauntless
 
    1.  0.0.0.0/0 via 10.18.11.193
 
-    ![The Dauntless Routing](https://user-images.githubusercontent.com/55425460/204121676-ab74fec3-9616-48e4-a60c-09cf963ac179.png)
+   ![The Dauntless Routing](https://user-images.githubusercontent.com/55425460/204121676-ab74fec3-9616-48e4-a60c-09cf963ac179.png)
 
 ### The Instrument
 
@@ -108,39 +108,38 @@ Cara menambahkan ke routing table:
    5. 10.18.11.0/25 via 10.18.11.218
    6. 10.18.10.128/25 via 10.18.11.218
 
-    ![The Instrument Routing](https://user-images.githubusercontent.com/55425460/204121682-880e9227-5398-4fd2-8628-55b58e321184.png)
+   ![The Instrument Routing](https://user-images.githubusercontent.com/55425460/204121682-880e9227-5398-4fd2-8628-55b58e321184.png)
 
 ### The Firefist
 
    1.  0.0.0.0/0 via 10.18.11.221
    2.  10.18.11.224/30 via 10.18.9.3
 
-    ![The Firefist Routing](https://user-images.githubusercontent.com/55425460/204121694-62c73f6d-e04e-40d6-b7a3-cbe47571901e.png)
+   ![The Firefist Routing](https://user-images.githubusercontent.com/55425460/204121694-62c73f6d-e04e-40d6-b7a3-cbe47571901e.png)
 
 ### The Queen
 
    1.  0.0.0.0/0 via 10.18.9.1
 
-    ![The Queen Routing](https://user-images.githubusercontent.com/55425460/204121702-dfbaeae9-4592-47e8-aaae-9f8c18ae27f7.png)
+   ![The Queen Routing](https://user-images.githubusercontent.com/55425460/204121702-dfbaeae9-4592-47e8-aaae-9f8c18ae27f7.png)
 
 ### The Riofound
 
    1.  0.0.0.0/0 via 10.18.11.217
 
-    ![The Riofound Routing](https://user-images.githubusercontent.com/55425460/204121706-aa0f1e4d-a30e-43f1-b73c-5a9aeaf6f687.png)
+   ![The Riofound Routing](https://user-images.githubusercontent.com/55425460/204121706-aa0f1e4d-a30e-43f1-b73c-5a9aeaf6f687.png)
 
 ### The Magical
 
    1.  0.0.0.0/0 via 10.18.11.205
 
-    ![The Magical Routing](https://user-images.githubusercontent.com/55425460/204121709-8b8196b9-05dd-4486-b082-d6c27db0ff9b.png)
+   ![The Magical Routing](https://user-images.githubusercontent.com/55425460/204121709-8b8196b9-05dd-4486-b082-d6c27db0ff9b.png)
     
 
 ## Pengetesan Routing di Cisco Packet Tracer (VLSM)
 
 Berikut adalah tampilan percobaan melakukan `ping` dari device satu ke device lainnya
-{screenshot gif tes routing di packettracer}
-
+![test_ping](https://user-images.githubusercontent.com/55425460/204121756-a4ec24f1-3e38-43f3-9ecf-953ec73f4bc3.gif)
 
 
 ## Konfigurasi Classless Inter Domain Routing (CIDR) di GNS3
