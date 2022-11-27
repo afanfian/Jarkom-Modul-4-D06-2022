@@ -40,8 +40,107 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 ![image](https://user-images.githubusercontent.com/82325182/203385761-a7c70cd4-6855-4bb9-9d0b-49386365eaa7.png)
 ### PC Heiga (70 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203385852-fc1e5665-1293-4d0d-bab5-54a33913bc46.png)
-### PC (Corvekt 200 Host)
+### PC Corvekt (200 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203386091-eccd9310-0195-4fcf-a8a9-b2dd2fa5fa34.png)
+
+### Server The Beast
+{ss confi server the beast}
+
+### Server The Witch
+{ss config server the witch}
+
+
+## Pengaturan Routing VLSM di Cisco Packet Tracer
+
+Cara menambahkan ke routing table:
+   1.  Klik pada router yang diinginkan
+   2.  Masuk ke tab `Config`
+   3.  Masuk ke bagian `Static`
+   4.  Masukkan Network ID yang dituju, subnet mask-nya, dan next hop-nya, lalu klik `Add`
+
+### The Resonance
+
+   1. 10.18.11.128/26 via 10.18.11.202
+   2. 10.18.11.196/30 via 10.18.11.202
+   3. 10.18.11.192/30 via 10.18.11.202
+   4. 10.18.0.0/22 via 10.18.11.202
+   5. 10.18.8.0/24 via 10.18.11.202
+   6. 10.18.6.0/23 via 10.18.11.206
+   7. 10.18.11.220/30 via 10.18.11.214
+   8. 10.18.10.0/25 via 10.18.11.214
+   9. 10.18.11.216/30 via 10.18.11.214
+   10. 10.18.9.0/24 via 10.18.11.214
+   11. 10.18.4.0/23 via 10.18.11.214
+   12. 10.18.11.224/30 via 10.18.11.214
+   13. 10.18.11.0/25 via 10.18.11.214
+   14. 10.18.10.128/25 via 10.18.11.214
+
+    {screenshot routing di The Resonance}
+
+### The Order
+
+   1. 0.0.0.0/0 via 10.18.11.201
+   2. 10.18.11.192/30 via 10.18.11.198
+   3. 10.18.0.0/22 via 10.18.11.198
+   4. 10.18.8.0/24 via 10.18.11.198
+
+    {screenshot routing di The Order}
+
+### The Minister
+
+   1.  0.0.0.0/0 via 10.18.11.197
+   2.  10.18.8.0/24 via 10.18.11.194
+   
+    {screenshot routing di The Minister}
+
+### The Dauntless
+
+   1.  0.0.0.0/0 via 10.18.11.193
+
+    {screenshot routing di The Dauntless}
+
+### The Instrument
+
+    1. 0.0.0.0/0 via 10.18.11.213
+    2. 10.18.9.0/24 via 10.18.11.222
+    3. 10.18.11.224/30 via 10.18.11.222
+    4. 10.18.4.0/24 via 10.18.11.222
+    5. 10.18.11.0/25 via 10.18.11.218
+    6. 10.18.10.128/25 via 10.18.11.218
+
+    {screenshot routing di The Instrument}
+
+### The Firefist
+
+   1.  0.0.0.0/0 via 10.18.11.221
+   2.  10.18.11.224/30 via 10.18.9.3
+
+    {screenshot routing di The Firefist}
+
+### The Queen
+
+   1.  0.0.0.0/0 via 10.18.9.1
+
+    {screenshot routing di The Queen}
+
+### The Riofound
+
+   1.  0.0.0.0/0 via 10.18.11.217
+
+    {screenshot routing di The Riofound}
+
+### The Magical
+
+   1.  0.0.0.0/0 via 10.18.11.205
+
+    {screenshot routing di The Magical}
+
+## Pengetesan Routing di Cisco Packet Tracer (VLSM)
+
+Berikut adalah tampilan percobaan melakukan `ping` dari device satu ke device lainnya
+{screenshot gif tes routing di packettracer}
+
+
 
 ## Konfigurasi Classless Inter Domain Routing (CIDR) di GNS3
 
