@@ -27,13 +27,13 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 ### PC Phanora (150 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203385022-b5ea1979-821d-4156-ad7a-7b8f87fb1be8.png)
 ### PC Keith (210 Host)
-![image](https://user-images.githubusercontent.com/82325182/203385105-48bd4c67-7666-4543-add8-16777f7f30e8.png)
+![PC Keith](https://user-images.githubusercontent.com/55425460/204121617-73c0d182-c685-42d2-8de6-81038ad92c20.png)
 ### PC Oakleave (500 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203385194-453b3723-4f59-4683-8b06-f9dc16fa6b0f.png)
 ### PC Matt Cugaff (120 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203385429-ef836cc5-8aab-46c1-9201-793cdb856a48.png)
 ### PC Ashaf (50 Host)
-![image](https://user-images.githubusercontent.com/82325182/203385534-b8005403-c03b-4ae2-9f8a-0be996224bbd.png)
+![PC Ashaf](https://user-images.githubusercontent.com/55425460/204121603-0f4b04d4-77ea-44b0-b28d-0c08c0260489.png)
 ### PC Haines (70 Host)
 ![image](https://user-images.githubusercontent.com/82325182/203385694-b555d75f-85d8-4027-9680-062495802d9a.png)
 ### PC Spendrow (120 Host)
@@ -44,10 +44,10 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 ![image](https://user-images.githubusercontent.com/82325182/203386091-eccd9310-0195-4fcf-a8a9-b2dd2fa5fa34.png)
 
 ### Server The Beast
-{ss config server the beast}
+![Server The Beast](https://user-images.githubusercontent.com/55425460/204121630-e29e4bfd-bf7e-4adb-bf3e-473e8cdbf5a8.png)
 
 ### Server The Witch
-{ss config server the witch}
+![Server The Witch](https://user-images.githubusercontent.com/55425460/204121636-4f3837a0-c056-4abd-94a4-f5c569b400b0.png)
 
 
 ## Pengaturan Routing VLSM di Cisco Packet Tracer
@@ -75,7 +75,7 @@ Cara menambahkan ke routing table:
    13. 10.18.11.0/25 via 10.18.11.214
    14. 10.18.10.128/25 via 10.18.11.214
 
-    {screenshot routing di The Resonance}
+    ![The Resonance Routing](https://user-images.githubusercontent.com/55425460/204121645-26b88201-d5d4-4549-a4da-1dd584036b0e.png)
 
 ### The Order
 
@@ -84,20 +84,20 @@ Cara menambahkan ke routing table:
    3. 10.18.0.0/22 via 10.18.11.198
    4. 10.18.8.0/24 via 10.18.11.198
 
-    {screenshot routing di The Order}
+    ![The Order Routing](https://user-images.githubusercontent.com/55425460/204121650-858c9247-6b4c-469a-bde3-e2330a71726c.png)
 
 ### The Minister
 
    1.  0.0.0.0/0 via 10.18.11.197
    2.  10.18.8.0/24 via 10.18.11.194
    
-    {screenshot routing di The Minister}
+    ![The Minister Routing](https://user-images.githubusercontent.com/55425460/204121659-d119641b-720a-43c4-9375-9a0944790225.png)
 
 ### The Dauntless
 
    1.  0.0.0.0/0 via 10.18.11.193
 
-    {screenshot routing di The Dauntless}
+    ![The Dauntless Routing](https://user-images.githubusercontent.com/55425460/204121676-ab74fec3-9616-48e4-a60c-09cf963ac179.png)
 
 ### The Instrument
 
@@ -108,32 +108,33 @@ Cara menambahkan ke routing table:
    5. 10.18.11.0/25 via 10.18.11.218
    6. 10.18.10.128/25 via 10.18.11.218
 
-    {screenshot routing di The Instrument}
+    ![The Instrument Routing](https://user-images.githubusercontent.com/55425460/204121682-880e9227-5398-4fd2-8628-55b58e321184.png)
 
 ### The Firefist
 
    1.  0.0.0.0/0 via 10.18.11.221
    2.  10.18.11.224/30 via 10.18.9.3
 
-    {screenshot routing di The Firefist}
+    ![The Firefist Routing](https://user-images.githubusercontent.com/55425460/204121694-62c73f6d-e04e-40d6-b7a3-cbe47571901e.png)
 
 ### The Queen
 
    1.  0.0.0.0/0 via 10.18.9.1
 
-    {screenshot routing di The Queen}
+    ![The Queen Routing](https://user-images.githubusercontent.com/55425460/204121702-dfbaeae9-4592-47e8-aaae-9f8c18ae27f7.png)
 
 ### The Riofound
 
    1.  0.0.0.0/0 via 10.18.11.217
 
-    {screenshot routing di The Riofound}
+    ![The Riofound Routing](https://user-images.githubusercontent.com/55425460/204121706-aa0f1e4d-a30e-43f1-b73c-5a9aeaf6f687.png)
 
 ### The Magical
 
    1.  0.0.0.0/0 via 10.18.11.205
 
-    {screenshot routing di The Magical}
+    ![The Magical Routing](https://user-images.githubusercontent.com/55425460/204121709-8b8196b9-05dd-4486-b082-d6c27db0ff9b.png)
+    
 
 ## Pengetesan Routing di Cisco Packet Tracer (VLSM)
 
