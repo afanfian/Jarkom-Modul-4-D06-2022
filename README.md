@@ -603,5 +603,6 @@ Berikut adalah tampilan percobaan melakukan `ping` dari device satu ke device la
 
 ## Kendala
 
-1. Kesulitan dalam melakukan konfigurasi routing pada router
-2. Kesulitan dalam menentukan subnet yang terjauh dari NAT
+1. Di Cisco Packet Tracer, saat ingin melakukan pengetesan routing dengan tombol `Simple PDU`, percobaan pertama selalu `Failed`, harus dicoba berkali-kali atau dipancing dengan command `ping` melalui command prompt
+2. Kesulitan dalam melakukan konfigurasi routing pada router
+3. Kesulitan dalam menentukan subnet yang terjauh dari NAT
