@@ -44,7 +44,7 @@ Dibawah ini merupakan konfigurasi pada setiap PC:
 ![image](https://user-images.githubusercontent.com/82325182/203386091-eccd9310-0195-4fcf-a8a9-b2dd2fa5fa34.png)
 
 ### Server The Beast
-{ss confi server the beast}
+{ss config server the beast}
 
 ### Server The Witch
 {ss config server the witch}
@@ -101,12 +101,12 @@ Cara menambahkan ke routing table:
 
 ### The Instrument
 
-    1. 0.0.0.0/0 via 10.18.11.213
-    2. 10.18.9.0/24 via 10.18.11.222
-    3. 10.18.11.224/30 via 10.18.11.222
-    4. 10.18.4.0/24 via 10.18.11.222
-    5. 10.18.11.0/25 via 10.18.11.218
-    6. 10.18.10.128/25 via 10.18.11.218
+   1. 0.0.0.0/0 via 10.18.11.213
+   2. 10.18.9.0/24 via 10.18.11.222
+   3. 10.18.11.224/30 via 10.18.11.222
+   4. 10.18.4.0/24 via 10.18.11.222
+   5. 10.18.11.0/25 via 10.18.11.218
+   6. 10.18.10.128/25 via 10.18.11.218
 
     {screenshot routing di The Instrument}
 
